@@ -29,7 +29,7 @@ function theGame() {
             if (rollTotal==7) {
                 moneys += 4;
             } else {
-                moneys -= 4;
+                moneys -= 1;
             }
             if (moneys > highTotal) {
                 highTotal= moneys;
