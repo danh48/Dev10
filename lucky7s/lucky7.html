@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lucky 7</title>
+        <style>
+            #results {
+                display: none;
+                width: 100%;
+                padding: 10px 0;
+                text-align: center;
+                margin-top: 5px;
+            }
+            #main {
+                text-align: center;
+            }
+            h1 {
+                text-align: center;
+            }
+            table {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #resultTable {
+                font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                border-collapse: collapse;
+                width: 50%;
+                border: 3px solid black;
+            }
+
+            #resultTable td, #resultTable th {
+                border: 1px solid black;
+                padding: 8px;
+                text-align: left;
+            }
+
+            #resultTable tr:nth-child(even){background-color: #f2f2f2;}
+
+            #resultTable tr:hover {background-color: #ddd;}
+
+            #resultTable th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: left;
+                background-color: #4f4e4d;
+                color: white;
+            }
+            #noMoney, #noBet {
+                display: none;
+                width: 100%;
+                padding: 20px 0;
+                text-align: center;
+                margin-top: 20px;
+            }
+        </style>
+        <script type="text/javascript" src="javascript/lucky7.js"></script>
+    </head>
+    <body>
+        <h1>Lucky Sevens</h1>
+        <div id="main">
+            <label for="bet">Starting Bet: &#36;</label>
+            <input type="number" id="bet" placeholder="0.00" />
+            <button onclick="theGame();">Play</button>
+        </div>
+        <hr />
+        <div id="results">
+            <h1>Results</h1>
+            <table id="resultTable">
+                <tr>
+                  <th>Starting Bet</th>
+                  <th>&#36;<span id="startBet"></span></th>
+                </tr>
+                <tr>
+                  <td>Total Rolls Before Going Broke</td>
+                  <td><span id="theRolls"></span></td>
+                </tr>
+                <tr>
+                  <td>Highest Amount Won</td>
+                  <td>&#36;<span id="theWinnings"></span></td>
+                </tr>
+                <tr>
+                  <td>Roll Count at Highest Amount Won</td>
+                  <td><span id="winningsRoll"></span></td>
+                </tr>
+            </table>
+        </div>
+        <h2 id="noMoney">
+            You haven't bet enough money.
+        </h2>
+        <h2 id="noBet">
+            Please enter a valid bet.
+        </h2>
+
+    </body>
+</html>

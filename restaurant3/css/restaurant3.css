@@ -1,0 +1,41 @@
+            body {
+                background-color: coral;
+            }
+
+            .thetitle {
+                    font-family: 'Sofia', Times, serif;
+            }
+            #beverage {
+                font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                border-collapse: collapse;
+                width: 50%;
+                border: 3px solid black;
+            }
+
+            #beverage td, #resultTable th {
+                border: 1px solid black;
+                padding: 8px;
+                text-align: left;
+            }
+
+            #beverage tr:nth-child(even){background-color: #d3cece;}
+
+            #beverage tr:nth-child(odd){background-color: white;}
+
+            #beverage tr:hover {background-color: #ddd;}
+
+            #beverage th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: left;
+                background-color: #4f4e4d;
+                color: white;
+            }
+
+            .col-sm-4 {
+                padding: 5px;
+            }
+
+            footer {
+                text-align: center;
+            }
